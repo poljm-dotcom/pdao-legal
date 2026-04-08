@@ -1,3 +1,6 @@
+Index
+https://poljm-dotcom.github.io/pdao-legal/
+
 Privacy Policy
 https://poljm-dotcom.github.io/pdao-legal/privacy-policy.html
 
