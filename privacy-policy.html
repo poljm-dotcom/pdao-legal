@@ -22,6 +22,29 @@
     header h1 {
       margin: 0;
       font-size: 2em;
+      margin-bottom: 15px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1em;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      text-decoration: none;
+    }
+    nav a.active {
+      background-color: rgba(255, 255, 255, 0.3);
+      font-weight: bold;
     }
     main {
       max-width: 900px;
@@ -57,50 +80,63 @@
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
+  <header>
+    <h1>Privacy Policy</h1>
+    <nav>
+      <a href="https://poljm-dotcom.github.io/pdao-legal/privacy-policy.html" class="active">Privacy Policy</a>
+      <a href="https://poljm-dotcom.github.io/pdao-legal/terms-of-service.html">Terms of Service</a>
+      <a href="https://poljm-dotcom.github.io/pdao-legal/data-deletion.html">Data Deletion</a>
+    </nav>
+  </header>
 
-  <p>Last updated: May 4, 2026</p>
+  <main>
+    <p>Last updated: May 4, 2026</p>
 
-  <h2>Introduction</h2>
-  <p>The PDAO Verification System is designed to automate posting of official notices to the Facebook Page <strong>PDAO Notice Bauang L.U.</strong>. This Privacy Policy explains what information we collect, how we use it, and how you can request deletion.</p>
+    <h2>Introduction</h2>
+    <p>The PDAO Verification System is designed to automate posting of official notices to the Facebook Page <strong>PDAO Notice Bauang L.U.</strong>. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.</p>
 
-  <h2>Information We Collect</h2>
-  <ul>
-    <li><strong>Facebook Page access data:</strong> We receive a Page Access Token and Page ID when connecting to Facebook. These are required to publish posts on your Page.</li>
-    <li><strong>Notice content:</strong> Text, images, or structured data you provide through the system to be published on the Page.</li>
-    <li><strong>System logs:</strong> Technical logs (timestamps, error messages, request status) used for monitoring and troubleshooting.</li>
-  </ul>
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>Facebook Page access data:</strong> We receive a Page Access Token and Page ID when connecting to Facebook. These are required to publish posts on your Page.</li>
+      <li><strong>Notice content:</strong> Text, images, or structured data you provide through the system to be published on the Page.</li>
+      <li><strong>System logs:</strong> Technical logs (timestamps, error messages, request status) used for monitoring and troubleshooting.</li>
+    </ul>
 
-  <h2>How We Use Information</h2>
-  <ul>
-    <li>To publish and manage notices on the Facebook Page as instructed.</li>
-    <li>To maintain authentication with Facebook while the system is active.</li>
-    <li>To monitor reliability and resolve technical issues.</li>
-  </ul>
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>To publish and manage notices on the Facebook Page as instructed.</li>
+      <li>To maintain authentication with Facebook while the system is active.</li>
+      <li>To monitor reliability and resolve technical issues.</li>
+    </ul>
 
-  <h2>Data Storage and Retention</h2>
-  <p>We store only the minimum data required for operation (Page ID, access token, and notice content). Tokens are refreshed every 60 days for reliability. Data is retained only as long as necessary to provide the service or until you request deletion.</p>
+    <h2>Data Storage and Retention</h2>
+    <p>We store only the minimum data required for operation (Page ID, access token, and notice content). Tokens are refreshed every 60 days for reliability. Data is retained only as long as necessary to provide service. After disconnection, data is deleted unless required for legal compliance.</p>
 
-  <h2>Sharing and Disclosure</h2>
-  <p>We do not sell or rent your data. Information may be shared only with service providers (e.g., hosting) to support system operation, or disclosed if required by law.</p>
+    <h2>Sharing and Disclosure</h2>
+    <p>We do not sell or rent your data. Information may be shared only with service providers (e.g., hosting) to support system operation, or disclosed if required by law.</p>
 
-  <h2>Security</h2>
-  <p>We use secure storage (.env files for tokens) and logging practices to protect data. While reasonable safeguards are applied, no system is 100% secure.</p>
+    <h2>Security</h2>
+    <p>We use secure storage (.env files for tokens) and logging practices to protect data. While reasonable safeguards are applied, no system is 100% secure.</p>
 
-  <h2>Your Rights</h2>
-  <ul>
-    <li><strong>Disconnect:</strong> You may disconnect the Facebook Page at any time, which revokes system access.</li>
-    <li><strong>Data deletion:</strong> You may request deletion of stored data by following instructions on our <a href="https://poljm-dotcom.github.io/pdao-legal/data-deletion.html">Data Deletion page</a>.</li>
-  </ul>
+    <h2>Your Rights</h2>
+    <ul>
+      <li><strong>Disconnect:</strong> You may disconnect the Facebook Page at any time, which revokes system access.</li>
+      <li><strong>Data deletion:</strong> You may request deletion of stored data by following instructions on our <a href="https://poljm-dotcom.github.io/pdao-legal/data-deletion.html">Data Deletion page</a>.</li>
+    </ul>
 
-  <h2>Children</h2>
-  <p>This system is not directed to children under 13 and does not knowingly collect information from them.</p>
+    <h2>Children</h2>
+    <p>This system is not directed to children under 13 and does not knowingly collect information from them.</p>
 
-  <h2>Contact</h2>
-  <p>For questions or deletion requests, contact us at <strong>pdaobauang@gmail.com</strong>.</p>
+    <h2>Contact</h2>
+    <p>For questions or deletion requests, contact us at <strong>pdaobauang@gmail.com</strong>.</p>
 
-  <h2>Changes</h2>
-  <p>We may update this policy from time to time. Updates will be reflected by the “Last updated” date above.</p>
+    <h2>Changes</h2>
+    <p>We may update this policy from time to time. Updates will be reflected by the "Last updated" date above.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 PDAO Verification System. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
